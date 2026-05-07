@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap');
+
+:root {
+  --bg-main: #0e0b09;           /* Deep Espresso */
+  --bg-card: rgba(26, 21, 18, 0.8); /* Translucent Card */
+  --gold: #c6a664;              /* Muted Champagne Gold */
+  --gold-bright: #e5c17d;
+  --text-light: #f5f3ef;
+  --text-muted: #a39e93;
+  --glass: rgba(255, 255, 255, 0.03);
+  --border: rgba(198, 166, 100, 0.2); /* Soft Gold Border */
+  --shadow-gold: 0 10px 40px rgba(0,0,0,0.6), 0 0 20px rgba(198, 166, 100, 0.05);
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-light);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .gold-text {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+/* Global Luxury Button */
+.gold-button {
+  background: linear-gradient(135deg, var(--gold) 0%, #a68a4f 100%);
+  color: #000;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.gold-button:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(198, 166, 100, 0.3);
+}

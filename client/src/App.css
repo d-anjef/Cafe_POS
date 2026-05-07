@@ -1,0 +1,35 @@
+:root {
+  --primary-gold: #d4af37;
+  --deep-black: #1a1a1a;
+  --soft-charcoal: #2d2d2d;
+  --warm-white: #f5f5f5;
+  --transition: all 0.3s ease-in-out;
+}
+
+body {
+  background-color: var(--deep-black);
+  color: var(--warm-white);
+  font-family: 'Playfair Display', serif; /* Elegant Typography */
+}
+
+.homepage {
+  background: linear-gradient(180deg, rgba(26,26,26,1) 0%, rgba(45,45,45,1) 100%);
+}
+
+.menu-card {
+  background: var(--soft-charcoal);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  transition: var(--transition);
+}
+
+.menu-card:hover {
+  border-color: var(--primary-gold);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+button.active-category {
+  background-color: var(--primary-gold);
+  color: var(--deep-black);
+  font-weight: bold;
+}

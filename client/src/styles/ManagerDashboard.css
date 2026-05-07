@@ -1,0 +1,107 @@
+/* Client/src/styles/Dashboard.css */
+
+.dashboard-container {
+  padding: 40px;
+  background-color: #0a0a0a; /* Deep Black */
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+}
+
+.gold-text {
+  color: #d4af37; /* Metallic Gold */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  border: 1px solid #d4af37;
+}
+
+.stat-card h3 {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.stat-value {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+.popular-section {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #222;
+}
+
+.popular-section h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  border-left: 4px solid #d4af37;
+  padding-left: 15px;
+}
+
+.popular-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.popular-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  border-bottom: 1px solid #333;
+}
+
+.popular-item span:first-child {
+  font-size: 1.1rem;
+}
+/* Dashboard.css additions */
+
+.charts-section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.chart-container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    overflow: hidden; /* Prevents chart overflow during resize */
+}
+
+@media (max-width: 900px) {
+    .charts-section-grid {
+        grid-template-columns: 1fr; /* Stack charts on mobile */
+    }
+}

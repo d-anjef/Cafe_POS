@@ -1,0 +1,87 @@
+/* client/src/styles/AdminLayout.css */
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #0a0a0a; /* Dark background for the whole area */
+}
+
+.sidebar {
+  width: 260px;
+  background-color: #121212; /* Match card backgrounds */
+  border-right: 1px solid #2a2a2a;
+  color: #fff;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  color: #D4AF37;
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar ul li a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 12px 15px;
+  display: block;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background: rgba(212, 175, 55, 0.1);
+  color: #D4AF37;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+.branch-tag {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  background: rgba(198, 166, 100, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.active-link {
+  background: rgba(198, 166, 100, 0.15);
+  border-left: 3px solid var(--gold);
+}
+
+.active-link a {
+  color: var(--gold) !important;
+}
+
+.admin-header {
+  padding: 20px 40px;
+  background: #121212;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.outlet-container {
+  padding: 30px;
+}

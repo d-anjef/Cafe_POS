@@ -1,0 +1,79 @@
+.checkout-options {
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.option-group {
+    background: #1a1a1a;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.option-group label {
+    color: var(--cafe-gold);
+    margin-right: 10px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.luxury-select {
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid var(--cafe-gold);
+    padding: 5px;
+    cursor: pointer;
+}
+/* Checkout.css additions */
+
+@media print {
+    /* 1. Hide everything on the page */
+    body * {
+        visibility: hidden;
+    }
+
+    /* 2. Only show the printable area */
+    .printable-area, .printable-area * {
+        visibility: visible;
+    }
+
+    /* 3. Position the receipt correctly */
+    .printable-area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 80mm; /* Standard Thermal Paper Width */
+        padding: 10px;
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    /* 4. Hide UI buttons during print */
+    .print-btn-hide, .close-link, .pos-modal-overlay {
+        display: none !important;
+    }
+
+    /* 5. Show the hidden header only on paper */
+    .print-header {
+        display: block !important;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .gold-text, .grand-total {
+        color: black !important;
+    }
+
+    .gold-divider {
+        border-top: 1px dashed black !important;
+    }
+
+    .luxury-card {
+        background: white !important;
+    }
+}

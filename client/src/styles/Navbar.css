@@ -1,0 +1,39 @@
+.luxury-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(14, 11, 9, 0.8);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--gold) !important;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0 1.2rem;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: var(--gold);
+}

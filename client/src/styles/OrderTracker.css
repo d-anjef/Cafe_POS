@@ -1,0 +1,39 @@
+.tracker-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.progress-container {
+  background: #333;
+  height: 10px;
+  border-radius: 5px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: #ffc107; /* Gold/Yellow */
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+.status-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.status-labels .active {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.status-badge.ready {
+  color: #28a745;
+  font-weight: bold;
+}
